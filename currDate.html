@@ -7,19 +7,18 @@
         <style>
             #lbl 
             { 
-                font-family: Garamond, serif;
-                font-size: x-large;
-                color: #a8a8a8;
-                padding: 2px;
-                border: 1px solid #ffffff;
-                text-align: center;
+                font-family: andale mono, monospace;
+                font-size: large;
+                color: #ffffff;
+                padding: 3px;
+                text-align: left;
                 line-height: 1.2;
                 height: 80% 
             }
 
             #date 
             { 
-                font-size: medium; 
+                font-size: x-large; 
             }
 
             body 
@@ -61,7 +60,7 @@
             var hrs = today.getHours();
             var dayOfWeek = weekday[today.getDay()];
             var monthName = month[today.getMonth()];
-            var date = dayOfWeek + " || " + monthName + " " + today.getDate() + ", " + today.getFullYear();
+            var date = dayOfWeek + " " + monthName + " " + today.getDate() + ", " + today.getFullYear();
             var greet;
 
             if (hrs < 12)
